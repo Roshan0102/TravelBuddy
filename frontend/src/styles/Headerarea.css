@@ -1,0 +1,76 @@
+.vx{
+    width: 100vw;
+}
+
+.overallcontainer{
+    background-color: rgba(22, 90, 215, 0.312)
+}
+
+.ulli{
+    list-style: none;
+    text-decoration: none;
+    background-color: none;
+    /* z-index: 2; */
+    border: 0px solid black;
+}
+
+.abc{
+    background-color: inherit;
+    border: none;
+    border: 0px solid black;
+}
+
+.toshowmaincontainer{
+    background-color: #7bcbe9;
+    color: black;
+    border:1px solid rgba(22, 90, 215, 0.312);
+    /* z-index: 2; */
+    margin-left: 450px;
+    margin-right: 450px;
+    margin-bottom: 5px;
+    margin-top: 50px;
+}
+
+.toshowtopcontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.toshowtopleftcontainer{
+    text-align: start;
+    padding: 5px; 
+}
+
+.toshowtoprightcontainer{
+    text-align: end;
+    padding: 5px;
+}
+
+.toshowbottomcontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.toshowbottomleftcontainer{
+    text-align: start;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 2px;
+    padding-top: 5px;
+}
+
+.toshowbottomrightcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding: 5px;
+}
+
+.sendrequest{
+    background-color: inherit;
+}
+
+
+.box{
+    margin-left: 500px;
+}

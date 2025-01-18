@@ -1,0 +1,5 @@
+.bodycontainer {
+    height: calc(100vh - 100px); /* Adjust 100px to the height of your navbar */
+    /* overflow-y: auto; Add scroll if content overflows */
+    margin-top: 60px;
+  }
