@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import '../styles/Viewrides.css';
+import Headerarea from './Headerarea';
+
 
 const Viewrides = () => {
   const [username, setUsername] = useState("");
@@ -68,6 +70,8 @@ const Viewrides = () => {
 
 
   return (
+    <div>
+      <Headerarea />
     <div  className='viewridesmaincontainer border-0 vh-100 bg-primary'>
       <div className='d-flex justify-content-center align-items-center'>
         {/* <button type='button' className='btn btn-primary' onClick={handleviewrides}>View Published Rides</button> */}
@@ -110,6 +114,7 @@ const Viewrides = () => {
           </li>
         ))}
       </ul>
+    </div>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react';
 import '../styles/Bodyarea.css';
-
+import Headerarea from './Headerarea';
 
 export default function Bodyarea() {
     const[username,setUsername] = useState("");  
@@ -138,13 +138,15 @@ export default function Bodyarea() {
   console.log(requestStatus)
   return (
     <div>
+      <Headerarea />
     <div className="bodycontainer vh-100">
-    <div className="d-flex justify-content-center align-items-center vh-100">
+    <div className="d-flex justify-content-center align-items-center vh-100" >
       <div className="card shadow-lg p-4" style={{ width: '100%', maxWidth: '500px', backgroundColor: 'rgba(22, 20, 20, 0.22)',color:'white'}}>
         <h2 className="text-center mb-4 text-light">Pick Your Bike Ride </h2>
           <h2 className='text-center text-success mb-4'>{username.charAt(0).toUpperCase() + username.slice(1)}</h2>
-        <form>
-          <div className="mb-3">
+
+        <div className='form-group'>
+          <div>
             <label htmlFor="leaving" className="form-label">Leaving From</label>
             <input
               type="text"
@@ -158,7 +160,7 @@ export default function Bodyarea() {
           </div>
 
           {/* Going To Input */}
-          <div className="mb-3">
+          <div>
             <label htmlFor="going" className="form-label">Going To</label>
             <input
               type="text"
@@ -172,7 +174,7 @@ export default function Bodyarea() {
           </div>
 
           {/* Date Input */}
-          <div className="mb-3">
+          <div>
             <label htmlFor="date" className="form-label">Date</label>
             <input
               type="date"
@@ -186,7 +188,9 @@ export default function Bodyarea() {
 
 
           <button type="submit" className="btn btn-success w-100 mt-3" onClick={handlesearchride}>Search</button>
-        </form>
+          <p style={{textAlign:"center",color:"black"}}>{message}</p>
+          <p style={{textAlign:"center",color:"black"}}>{error}</p>
+        </div>
       </div>
     </div>
   </div>

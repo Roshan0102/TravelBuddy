@@ -20,7 +20,7 @@ function Login() {
             const { userId } = await response.json();
             localStorage.setItem('userId', userId);
             localStorage.setItem('username', usernameOrEmail);
-            navigate('/Headerarea');
+            navigate('/bodyarea');
         } else {
             const error = await response.json();
             setMessage(error.message || 'Login failed');

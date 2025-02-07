@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
+import Headerarea from './Headerarea';
 
 const Requestrides = () => {
   const [username, setUsername] = useState("");
@@ -106,6 +107,8 @@ const Requestrides = () => {
 
 
   return (
+    <div>
+      <Headerarea />
     <div style={{backgroundcolor: 'rgba(22, 90, 215, 0.312)'}} className='viewridesmaincontainer border-0'>
       <h1 className='text-primary d-flex justify-content-center'>Requests Received</h1>
       <div className='d-flex justify-content-center align-items-center'>
@@ -144,6 +147,7 @@ const Requestrides = () => {
           </li>
         ))}
       </ul>
+    </div>
     </div>
   );
 }
